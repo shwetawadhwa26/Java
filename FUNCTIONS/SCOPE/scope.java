@@ -4,7 +4,7 @@ public class Scope {
         int b = 20;
     
         swap(a, b);
-        // Calling random method
+        // Calling random method    
         random(50);
     }
     
