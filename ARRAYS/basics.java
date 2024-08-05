@@ -4,7 +4,9 @@ public class basics
 {
     public static void main(String[] args){
         Scanner in =new Scanner(System.in);
-        int[] arr=new int[5];
+        int[] arr=new int[5]; 
+        //int[] arr - represents which type of data is being entered
+        //only one type of data can be stored in one array
         // arr[0]=23;
         // arr[1]=45;
         // arr[2]=353;
@@ -18,6 +20,9 @@ public class basics
         for(int i=0;i<arr.length;i++){
             arr[i]=in.nextInt();
         }
+        int[] ros; //declaration of array. ros is getting defined in the stack
+       ros = new int[5]; //intialisation. object is being created in the memoery(heap)
+
         // for(int i=0;i<arr.length;i++){
         //     System.out.print(arr[i]);
         // }
@@ -28,6 +33,8 @@ public class basics
         }
         //INDEX OUT OF BOUND ERROR
        // System.err.println(arr[5]);
+       
+
     }
     
 }
