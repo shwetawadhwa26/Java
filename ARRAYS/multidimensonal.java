@@ -36,12 +36,16 @@ public class multidimensonal {
         //     System.out.println();
         // }
 
-        //WAY @
-        for(int row =0;row<arr.length;row++){
-            System.out.println(Arrays.toString(arr[row]));
+        //WAY 2
+        // for(int row =0;row<arr.length;row++){
+        //     System.out.println(Arrays.toString(arr[row]));
+        // }
+
+
+        //WAY 3
+        for(int[] a : arr){
+            System.out.println(Arrays.toString(a));
         }
-
-
     }
     
 }
