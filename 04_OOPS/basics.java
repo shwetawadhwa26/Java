@@ -36,5 +36,11 @@ public class basics {
         this.name="KUNAL KUSHWAHA";
         this.marks=88.5f;
     }
+      
+    Student(int roll, String naam, float marks){
+        rno = roll;
+        name=naam;
+        marks=mark;
+    }
 }
 }
