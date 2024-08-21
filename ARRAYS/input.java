@@ -9,7 +9,7 @@ public class input {
         arr[2]=88;
         arr[3]=77;
 
-        System.err.println(arr[3]);
+        System.out.println(arr[3]);
         for(int i =0; i<arr.length;i++){
             arr[i]=in.nextInt();
 

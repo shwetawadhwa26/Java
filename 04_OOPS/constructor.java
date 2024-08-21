@@ -14,7 +14,7 @@ public class constructor {
     // Method to display the person's details
     void display() {
         System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
+        System.out.println("Age: " + age);5
     }
 
     public static void main(String[] args) {
