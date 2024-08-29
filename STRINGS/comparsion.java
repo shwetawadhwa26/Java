@@ -14,6 +14,9 @@ public class comparsion {
 
         System.out.println(b.charAt(4));
 
+
+        System.out.println(c.getClass().getName() +"@"+Integer.toHexString(c.hashCode()));
+
         
     }
     
