@@ -28,33 +28,36 @@ public class directfunctions{
         //char[] str1 = input.toCharArray();
         //char[] str2 = input.toCharArray();
 
-        String str1=scanner.next();
-        String str2=scanner.next();
+        String str1=scanner.nextLine();
+        //String str2=scanner.next();
         //String string1 = new String(str1);
         //String string2  = new String(str2);
 
         //Compares two strings lexicographically
-        System.out.println(str1.compareTo(str2));
+        // System.out.println(str1.compareTo(str2));
 
-        //ComAppends a string to the end of another stringpares two strings lexicographically, ignoring case differences
-        System.out.println(str1.compareToIgnoreCase(str2));
+        // //ComAppends a string to the end of another stringpares two strings lexicographically, ignoring case differences
+        // System.out.println(str1.compareToIgnoreCase(str2));
 
-        //Appends a string to the end of another string
-        System.out.println(str1.concat(str2));
+        // //Appends a string to the end of another string
+        // System.out.println(str1.concat(str2));
 
-        //Checks whether a string contains a sequence of characters
-        System.out.println(str1.contains("hell"));
-        System.out.println(str2.contains("hell"));
+        // //Checks whether a string contains a sequence of characters
+        // System.out.println(str1.contains("hell"));
+        // System.out.println(str2.contains("hell"));
 
-        //Checks whether a string ends with the specified character(s)
-        System.out.println(str1.endsWith("lo"));
+        // //Checks whether a string ends with the specified character(s)
+        // System.out.println(str1.endsWith("lo"));
 
 
-        //Checks whether a string starts with specified characters
-        System.out.println(str1.startsWith("he"));
+        // //Checks whether a string starts with specified characters
+        // System.out.println(str1.startsWith("he"));
 
-        System.out.println(str1.toUpperCase());
-        System.out.println(str2.toLowerCase());
+        // System.out.println(str1.toUpperCase());
+        // System.out.println(str2.toLowerCase());
+
+        //removes whitespace from both ends of a string.
+        System.out.println(str1   .trim());
 
 
 
