@@ -8,14 +8,13 @@ public class plalindrome {
         int n = ch.length;
         int i =0;
         int j =n-1;
-        while(i>=j){
+        while(i<=j){
             if(ch[i]==ch[j]){
                 i++;
-                j--;
+                 j--;
             }
-        System.out.println("the string is a palindrome");
-
         }
+         System.out.println("the string is a palindrome");
 
         
     }
