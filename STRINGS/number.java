@@ -2,7 +2,7 @@
 
 public class Main {
 
-    /
+    
     public static void countStrings(int n, int ind, String str, int[] ans) {
         if (ind == n) {
             int count = 0;
@@ -27,7 +27,7 @@ public class Main {
 
     
     public static void main(String[] args) {
-        int[] ans = {0}; // To store the answer
+        int[] ans = {0}; 
         countStrings(5, 0, "", ans);
         System.out.println(ans[0]);
     }
