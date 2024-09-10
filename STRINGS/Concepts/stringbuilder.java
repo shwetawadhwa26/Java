@@ -1,4 +1,4 @@
-package Concepts;
+
 // public class stringbuilder {
 //     public static void main(String[] args) {
 //         StringBuilder builder = new StringBuilder();
@@ -38,6 +38,11 @@ public class stringbuilder{
     sbs.append("l");
     sbs.append("o");
     System.out.println(sbs);
+
+    sb.replace(1,5,"kushwaha");
+    //sb.delete(1,5,"kushwaha");
+    System.out.println(sb);
+
 
 
     //REVERSE USING STRING BUILDER 
