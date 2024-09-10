@@ -1,3 +1,4 @@
+package Concepts;
 // public class stringbuilder {
 //     public static void main(String[] args) {
 //         StringBuilder builder = new StringBuilder();
@@ -38,6 +39,19 @@ public class stringbuilder{
     sbs.append("o");
     System.out.println(sbs);
 
+
+    //REVERSE USING STRING BUILDER 
+    StringBuilder sabu = new StringBuilder("hello");
+    for(int i =0;i<sabu.length()/2;i++){
+        int front =i;
+        int back =sabu.length()-1-i; //5-1-0 =4
+        char frontchar = sabu.charAt(front);
+        char backchar = sabu.charAt(back);
+
+        sabu.setCharAt(front,backchar);
+        sabu.setCharAt(back,frontchar);
+    }
+    System.out.println(sabu);
 
 
     }}
