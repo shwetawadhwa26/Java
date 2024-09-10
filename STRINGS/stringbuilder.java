@@ -15,10 +15,18 @@
 
 public class stringbuilder{
     public static void main(String[] args) {
+    StringBuilder sb = new StringBuilder("tony");
+    System.out.println(sb); //tony
 
-        for(int i =0;i<10;i++){
-            char ch=(char)('a'+i);
-            System.out.println(i+" "+ch[i]);
-        }
-    }
-}
+    System.out.println(sb.charAt(0)); //t
+ 
+    sb.setCharAt(0,'P');//Pony
+    System.out.println(sb);
+
+    sb.insert(0,'S');
+    System.out.println(sb);
+
+    sb.insert(2,'l');
+    System.out.println(sb);
+
+    }}
