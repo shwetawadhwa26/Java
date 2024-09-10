@@ -29,4 +29,15 @@ public class stringbuilder{
     sb.insert(2,'l');
     System.out.println(sb);
 
+    sb.delete(2,4);
+    System.out.println(sb);
+    StringBuilder sbs = new StringBuilder("H");
+    sbs.append("e");
+    sbs.append("l");
+    sbs.append("l");
+    sbs.append("o");
+    System.out.println(sbs);
+
+
+
     }}
