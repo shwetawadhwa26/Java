@@ -1,3 +1,12 @@
+//Process of executing multiple threads simultaneously 
+//It helps maximum utilization of CPU
+//Threads are independent they dont affect the execution of other threads
+//An exception in one thread will not interrupt other threads
+//Useful for serving multiple clients, multiplayer games or other mutual independent tasks
+
+
+
+
 class MultithreadingDemo extends Thread {
     public void run()
     {
