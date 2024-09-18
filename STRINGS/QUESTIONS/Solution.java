@@ -3,7 +3,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 class Solution{
-    public boolean anagram(String s,String t){
+    public boolean Anagram(String s,String t){
         if(s.length()!=t.length()){
             return false;
         }
@@ -16,17 +16,16 @@ class Solution{
     
 
 }
-public class Main{
+
 public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     String s = scanner.nextLine();
     String t = scanner.nextLine();
     Solution solution = new Solution();
-    if (solution.anagram(s, t)) {
-            System.out.println("The strings are anagrams");
+    if (solution.Anagram(s, t)) {
+            System.out.println("anagram");
         } else {
-            System.out.println("The strings are not anagrams");
+            System.out.println("not anagram");
         }
     }
-}
 }
