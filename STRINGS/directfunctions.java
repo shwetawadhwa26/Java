@@ -28,7 +28,7 @@ public class directfunctions{
         //char[] str1 = input.toCharArray();
         //char[] str2 = input.toCharArray();
 
-        String str1=scanner.nextLine();
+        //String str1=scanner.nextLine();
         //String str2=scanner.next();
         //String string1 = new String(str1);
         //String string2  = new String(str2);
@@ -57,7 +57,19 @@ public class directfunctions{
         // System.out.println(str2.toLowerCase());
 
         //removes whitespace from both ends of a string.
-        System.out.println(str1   .trim());
+        // System.out.println(str1   .trim());
+
+
+
+        //SPLIT FUNCTION
+        String str1=scanner.nextLine();
+        String s[];
+        s=str1.split(" ");
+        for(int i =0;i<s.length;i++){
+            System.out.println(s[i]);
+        }
+
+        
 
 
 
