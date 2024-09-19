@@ -13,11 +13,7 @@ public class totaloccurence {
             }
         }
 System.out.println(count);
-
-
     }
-
-    
 }
 
 //Way 2

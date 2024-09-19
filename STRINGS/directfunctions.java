@@ -66,7 +66,7 @@ public class directfunctions{
         String s[];
         s=str1.split(" ");
         for(int i =0;i<s.length;i++){
-            System.out.println(s[i]);
+            System.out.print(s[i]);
         }
 
         
