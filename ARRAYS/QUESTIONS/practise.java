@@ -14,20 +14,37 @@
 // }
 
 
+// import java.util.Scanner;
+// public class practise{
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+//         int sum =0;
+//         int size = scanner.nextInt();
+//         int arr[] = new int[size];
+//         for(int i =0;i<arr.length;i++){
+//             arr[i]=scanner.nextInt();
+//         }
+//         for(int i=0;i<arr.length;i++){
+//             sum =sum+arr[i];
+//         }
+//         System.out.println(sum);
+//     }
+// }
+
+
 import java.util.Scanner;
 public class practise{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int sum =0;
         int size = scanner.nextInt();
         int arr[] = new int[size];
         for(int i =0;i<arr.length;i++){
-            arr[i]=scanner.nextInt();
+            arr[i]=i+1;}
+        for(int i =0;i<arr.length;i++){
+            System.out.print(arr[i]+" ");
         }
-        for(int i=0;i<arr.length;i++){
-            sum =sum+arr[i];
-        }
-        System.out.println(sum);
     }
 }
+
+
 
