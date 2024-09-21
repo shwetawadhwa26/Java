@@ -4,7 +4,7 @@ public class extremeprint{
         Scanner scanner = new Scanner(System.in);
         int[] arr= new int[5];
         int left =0;
-        int right =arr.length-1; //if enteries 10 then right = 9 
+        int right =arr.length-1;
         for(int i =0;i<arr.length;i++){
             arr[i]=scanner.nextInt();
         }
