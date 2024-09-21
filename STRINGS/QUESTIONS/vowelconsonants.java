@@ -8,12 +8,16 @@ public class vowelconsonants {
         int vowels =0;
         int consonant=0;
         int number =0;
+        int space =0;
 
         for (int i = 0; i < input.length(); i++) {
             char ch = input.charAt(i);
             
             if (ch != ' ') {
                 count++;  
+            }
+            if (ch == ' ') {
+                space++;  
             }
             
             
@@ -35,6 +39,7 @@ public class vowelconsonants {
         System.out.println("Vowel count: " + vowels);
         System.out.println("Consonant count: " + consonant);
         System.out.println("Number count: " + number);
+        System.out.println("space: " + space);
 
 
         
