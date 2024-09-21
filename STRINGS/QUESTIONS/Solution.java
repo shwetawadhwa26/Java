@@ -11,7 +11,9 @@ class Solution{
         char[] tArr= t.toCharArray();
         Arrays.sort(sArr);
         Arrays.sort(tArr);
-        return Arrays.equals(sArr,tArr);
+        if(Arrays.equals(sArr,tArr)){
+            System.out.println("Okay");
+        }
 
     
 
