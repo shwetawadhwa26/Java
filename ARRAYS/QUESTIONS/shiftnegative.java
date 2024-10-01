@@ -3,7 +3,7 @@ public class shiftnegative {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[] arr= new int[10];
-        int j =0;
+        int j =1;
         for(int i=0;i<arr.length;i++){
             arr[i] = scanner.nextInt();
         }
