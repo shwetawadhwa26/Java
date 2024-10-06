@@ -19,7 +19,7 @@ public class UnionOfTwoArrays {
         int arr2[]={2,9,4,4,10,12,8};
         Set<Integer> unionSet = union(arr1, arr2);
         System.out.println(unionSet);
-         System.out.println("size of the union set = " + unionSet.size());
+         System.out.println("size of the union set = " + unionSet.size()); 
     }
     
 }
