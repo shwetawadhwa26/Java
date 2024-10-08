@@ -93,6 +93,30 @@ public class basics {
         int rightNodes = CountOfNodes(root.right);
         return leftNodes+rightNodes+1;
         }
+    public static int HeightOfTree(Node root){
+        if(root==null){
+            return 0;
+        }
+    int leftheight = HeightOfTree(root.left);
+    int rightheight = HeightOfTree(root.right);
+    if (leftheight+1 > rightheight+1){
+        return leftheight+1;
+    }
+    else{
+        return rightheight+1;
+    }
+    }
+    //height logic two 
+    public static int Height(Node root){
+        if(root==null){
+            return 0;
+        }
+    int leftheight = Height(root.left);
+    int rightheight = Height(root.right);
+    int myHeight = Math.max(leftheight,rightheight)+1;
+    return myHeight;
+    }
+
     public static int SumOfNodes(Node root){
         if(root==null){
             return 0;
@@ -100,6 +124,16 @@ public class basics {
         int sumleft = SumOfNodes(root.left);
         int sumright = SumOfNodes(root.right);
         return sumleft+sumright+root.data;
+    }
+
+    public static int Diameter(Node root){
+        if(root==null){
+            return 0;
+        }
+        int diameter1 = Diameter(root.left);
+        int diameter2= Diameter(root.right);
+        int diameter3=Height(root.left)+Height(root.right)+1;
+        return Math.max(diameter1, Math.max(diameter2,diameter3));
     }
     public static void main(String args[]){
         int nodes[]={1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
@@ -111,10 +145,19 @@ public class basics {
         // postorder(root);
         // levelOrder(root);
         int nodecount = CountOfNodes(root);
-        System.out.println(nodecount);
+        System.out.println("count of nodes = " + nodecount);
 
         int sum = SumOfNodes(root);
-        System.out.println(sum);
+        System.out.println("sum = " + sum);
+
+        int height = HeightOfTree(root);
+        System.out.println("height = " +height);
+
+        int heightoftree = Height(root);
+        System.out.println("height by shorter logic = "+heightoftree);
+
+        int diameteroftree=Diameter(root);
+        System.out.println("diameter of tree = "+ diameteroftree);
     }
     
 }
