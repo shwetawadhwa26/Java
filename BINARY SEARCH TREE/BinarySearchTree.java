@@ -1,3 +1,5 @@
+//BINARY SEARCH TREE
+
 import java.util.Scanner;
 
 class Node {
@@ -24,6 +26,7 @@ public class BinarySearchTree {
         }
         return root;
     }
+
     public static void createBST(Node root) {
         Scanner scanner = new Scanner(System.in);
         int data = scanner.nextInt();
@@ -33,6 +36,7 @@ public class BinarySearchTree {
         }
         scanner.close();
     }
+
     public static void preorder(Node root) {
         if (root == null) {
             return;
@@ -41,6 +45,7 @@ public class BinarySearchTree {
         preorder(root.left);
         preorder(root.right);
     }
+
     public static void postorder(Node root) {
         if (root == null) {
             return;
@@ -49,6 +54,7 @@ public class BinarySearchTree {
         System.out.print(root.data + " ");
         postorder(root.right);
     }
+
     public static Node minValue(Node root) {
         if (root == null) {
             return null;
@@ -59,6 +65,7 @@ public class BinarySearchTree {
         }
         return temp;
     }
+
     public static Node maxValue(Node root) {
         if (root == null) {
             return null;
